@@ -55,7 +55,6 @@ void user_menu()
     // printf("Your choice: ");
 }
 
-//  nhom chat menu 17/01/2023
 void group_chat_menu()
 {
     printf("\n\n****** Group chat ******\n");

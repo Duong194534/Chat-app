@@ -67,7 +67,6 @@ void make_server()
     for (int i = 0; i < MAX_USER; i++)
     {
         user[i].socket = -1;
-        // 17/01/2023
         for (int j = 0; j < MAX_GROUP; j++)
             user[i].group_id[j] = -1;
     }
@@ -346,7 +345,6 @@ void sv_chat_all(int conn_socket, Package *pkg)
     send(conn_socket, pkg, sizeof(*pkg), 0);
 }
 
-// 17/1/2023
 int search_user(int conn_socket)
 {
     int i = 0;
